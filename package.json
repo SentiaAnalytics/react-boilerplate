@@ -1,0 +1,25 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:SentiaAnalytics/reason-react.git",
+  "license": "MIT",
+  "dependencies": {
+    "bs-css": "^6.7.0",
+    "bs-json": "^1.0.1",
+    "reason-react": "^0.4.1"
+  },
+  "scripts": {
+    "clean": "rm -rf lib public/bundle.js",
+    "build": "bsb -clean-world -make-world && webpack",
+    "build:watch": "bsb -clean-world -make-world -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "bs-platform": "^3.0.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
